@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    background-color: #6191bb;
+    display: flex;
+}
+form{
+    margin: 15px auto 0 auto;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    background-color: white;
+}
+.input-block{
+    display: flex;
+    align-items: end;
+    margin-top: 15px;
+}
+label{
+    display: flex;
+    flex-direction: column;
+}
+#divError{
+    color: red;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.469px;
+}
+.wrapper-output-and-buttons{
+    display: flex;
+    margin-top: 15px;
+}
+.result{
+    display: block;
+    width: 170px;
+    height: 150px;
+    overflow: auto;
+}
+#name-value{
+    height: 20px;
+    width: 170px;
+}
+#name-value,
+.result,
+#add,
+#sort-by-name,
+#sort-by-value,
+#delete{
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 18px;
+}
+#add,
+#sort-by-name,
+#sort-by-value,
+#delete{
+    height: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    background: linear-gradient(to bottom, #ffffff, rgba(228, 228, 228, 0.73));
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.469px;
+}
+#sort-by-value{
+    margin-top: 10px;
+}
+#delete{
+    margin-top: 25px;
+}
+h1{
+    font-family: "DM Sans", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -0.469px;
+}
+.label-name-value,
+#name-value,
+span,
+li{
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.469px;
+    cursor: pointer;
+}
+.selected{
+    background-color: #0067cb;
+    color: white;
+}
