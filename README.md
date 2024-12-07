@@ -2,4 +2,4 @@ Tylyk Mykola
 
 my tg @nickvt4
 
-my emael tylyk.m.v@gmail.com
+my email tylyk.m.v@gmail.com
