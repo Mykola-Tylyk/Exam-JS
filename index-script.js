@@ -80,6 +80,6 @@ deleteButton.addEventListener('click', function (ev) {
     ev.preventDefault();
     const selectedElement = ulResult.querySelectorAll('.selected');                   //querySelectorAll находит все li с классом .selected, получил NodeList (колекцию)
     const idSelectedElement = Array.from(selectedElement).map(li => +(li.dataset.id));         //Array.from переводит колекцию в обычный массив, map достает data-id из li. Получается масси из чисел id которые нужно удалить
-    array = array.filter(item => !idSelectedElement.includes(item.id));                                         //из array достается id и сравнивается с id выделенных элементов, если они совпали то true и инвертируется в falce, что бы фильтр не включал этот элемент в новый возращаемый массив
+    array = array.filter(item => !idSelectedElement.includes(item.id));                                         //из array достается id и сравнивается с id выделенных элементов, если они совпали то true и инвертируется в false, что бы фильтр не включал этот элемент в новый возращаемый массив
     showList(array);                                                                                            //обновляется вывод в DOM
 });
